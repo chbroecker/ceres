@@ -11,7 +11,11 @@ echo "Setting up ceres workspace"
 mkdir -p ~/ceres/src
 cd ~/ceres
 catkin_make
-cd ~/src
+
+echo ""
+echo "Setting up bringup functionality"
+cd ~/ceres/src/
+catkin_create_package ceres_bringup
 
 echo ""
 echo "Installing uos_tools"

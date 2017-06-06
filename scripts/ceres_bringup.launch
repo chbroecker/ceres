@@ -1,0 +1,11 @@
+<! Launch file to start ceres robot>
+
+<launch>
+
+<include file="$(find volksbot_driver)/launch/volksbot.launch" />
+
+  <include file="$(find uos_tools)/uos_diffdrive_teleop/launch/key.launch" />
+
+  <include file="$(find pico_flexx_driver)/launch/pico_flexx_driver.launch" />
+
+</launch>
