@@ -1,21 +1,21 @@
 #!/bin/bash
 
-source /opt/ros/kinetic/setup.bash
+# source /opt/ros/kinetic/setup.bash
 
 echo ""
 echo "This is a Shell script to set up the ceres robot"
 echo "It will need Sudo access"
 
 echo ""
-echo "Setting up ceres workspace"
-mkdir -p ~/ceres/src
-cd ~/ceres
+echo "Setting up ceres_ws workspace"
+mkdir -p ~/ceres_ws/src
+cd ~/ceres_ws
 catkin_make
 
 echo ""
 echo "Setting up bringup functionality"
-cd ~/ceres/src/
-catkin_create_package ceres_bringup
+cd ~/ceres_ws/src/
+catkin_create_package ceres_ws_bringup
 
 echo ""
 echo "Installing uos_tools"
@@ -42,11 +42,11 @@ rm *.exe
 
 echo ""
 echo "Setting up USB details"
-mv libroyale-3.1.0.122-LINUX-x86-64Bit/driver/udev/10-royale-ubuntu.rules /etc/udev/rules.d
+sudo mv libroyale-3.1.0.122-LINUX-x86-64Bit/driver/udev/10-royale-ubuntu.rules /etc/udev/rules.d
 
 echo ""
 echo "catkin_make to apply changes"
-cd ~/ceres/
+cd ~/ceres_ws/
 catkin_make
 
 echo "Completed"
