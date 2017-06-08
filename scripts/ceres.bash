@@ -16,14 +16,22 @@ echo ""
 echo "Setting up bringup functionality"
 cd ~/ceres_ws/src/
 catkin_create_package ceres_ws_bringup
+cd ceres_ws_bringup
+mkdir launch && cd launch
+wget https://raw.githubusercontent.com/chbroecker/ceres/master/scripts/ceres_bringup.launch?token=AVQgiotxCsGd9xXpo9t0zcf5pPALBUFpks5ZQoyzwA%3D%3D > ceres_bringup.launch
 
 echo ""
 echo "Installing uos_tools"
+cd ~/ceres_ws/src/
 git clone https://github.com/uos/uos_tools.git
 
 echo ""
 echo "Installing volksbot driver"
 git clone https://github.com/uos/volksbot_driver.git
+
+echo ""
+echo "Install sick tim"
+git clone https://github.com/uos/sick_tim.git
 
 echo ""
 echo "Cloning the Pico_Flexx_Driver from Github"
@@ -43,6 +51,7 @@ rm *.exe
 echo ""
 echo "Setting up USB details"
 sudo mv libroyale-3.1.0.122-LINUX-x86-64Bit/driver/udev/10-royale-ubuntu.rules /etc/udev/rules.d
+sudo mv ~/ceres_ws/src/sick_tim/udev/81-sick-tim3xx.rules /etc/udev/rules.d
 
 echo ""
 echo "catkin_make to apply changes"
