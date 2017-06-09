@@ -14,5 +14,9 @@
     uri: https://github.com/uos/uos_tools.git
     version: kinetic
 - git:
+    local-name: phidgets_drivers
+    uri: https://github.com/ros-drivers/phidgets_drivers.git
+    version: kinetic
+- git:
     local-name: ceres_bringup
     uri: https://github.com/chbroecker/ceres_bringup.git

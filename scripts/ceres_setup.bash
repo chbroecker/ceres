@@ -32,6 +32,7 @@ echo ""
 echo "Setting up USB details"
 sudo mv libroyale-3.1.0.122-LINUX-x86-64Bit/driver/udev/10-royale-ubuntu.rules /etc/udev/rules.d
 sudo mv ~/ceres_ws/src/sick_tim/udev/81-sick-tim3xx.rules /etc/udev/rules.d
+sudo mv ~/ceres_ws/src/phidgets_drivers/phidgets_api/share/udev/99-phidgets.rules /etc/udev/rules.d
 
 echo ""
 echo "catkin_make to apply changes"
