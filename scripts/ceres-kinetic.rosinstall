@@ -13,3 +13,6 @@
     local-name: uos_tools
     uri: https://github.com/uos/uos_tools.git
     version: kinetic
+- git:
+    local-name: ceres_bringup
+    uri: https://github.com/chbroecker/ceres_bringup.git
