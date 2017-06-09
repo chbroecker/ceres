@@ -19,4 +19,12 @@
 - [ ] URDF Models </br>
 
 ## Notes
-* Clone sick_tim manually, udev not in official repo (pull request!)
+* Clone sick_tim manually, udev not in official repo (pull request to uos/sick_tim!)
+
+|Julian|Chris|
+| :------------- | :------------- |
+|02.07. 14:00 - 17:00|""|
+|06.07. 18:00 - 21:00|""|
+|08.07. 13:45 - 15:45|""|
+|09.07. 13:15 - 16:15|""|
+||""|
