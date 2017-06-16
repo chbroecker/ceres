@@ -7,9 +7,12 @@
 * uos_diff_drive
 
 ## Status
+All confirmed working in ROS kinetic
 - [x] picoflexx driver </br>
 - [x] volksbot driver </br>
 - [x] teleop from uos_tools </br>
+Setup
+- [x] `.rosinstall` file confirmed working in conjunction with `wstool`
 
 ## TODO
 - [ ] Install from official repo `sudo apt search ros kinetic ...` and install found package with `sudo apt install ros-kinetic-xxx-xx`. Files like these will be dumped /opt/ros/kinetic/lib</br>  
@@ -19,4 +22,4 @@
 - [ ] URDF Models </br>
 
 ## Notes
-* Clone sick_tim manually, udev not in official repo (pull request!)
+* Clone sick_tim manually, udev not in official repo (pull request to uos/sick_tim!)
