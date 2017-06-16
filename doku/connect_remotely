@@ -31,5 +31,3 @@ At the local terminal:
 1. sudo gedit ~/.bashrc //add the two export commands at the end of the file.
 
 2. source ~/.bashrc //and restart terminal
-
-blablabalbal
