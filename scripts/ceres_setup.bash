@@ -3,6 +3,11 @@
 # sick_tim, uos_tools, pico_flexx_drivers, volksbot driver and more. Also see:
 
 echo ""
+echo "Complete ros setup"
+cd /
+echo 'source /opt/ros/kinetic/setup.bash' >> .bashrc
+
+echo ""
 echo "Install wstool and use it to start .rosinstall process"
 sudo apt install python-wstool
 mkdir -p ~/ceres_ws
@@ -10,12 +15,11 @@ cd ~/ceres_ws
 
 echo ""
 echo "Pulling .rosinstall script"
+# Pull rosinstall file and executes it
 wstool init src https://raw.githubusercontent.com/chbroecker/ceres/master/scripts/ceres-kinetic.rosinstall?token=AVQgivWyEzSsUrQHE6qCUBCDTZ6ieSP4ks5ZQ8zywA%3D%3D
 mv ceres-kinetic.rosinstall?token=AVQgivWyEzSsUrQHE6qCUBCDTZ6ieSP4ks5ZQ8zywA%3D%3D ceres-kinetic.rosinstall
+rm ceres-kinetic.rosinstall?token=AVQgivWyEzSsUrQHE6qCUBCDTZ6ieSP4ks5ZQ8zywA%3D%3D
 wstool update -t src 
-
-echo ""
-echo "Pulling launch file"
 
 echo ""
 echo "Copying the libroyale SDK to the pico_flexx_driver:"
@@ -40,20 +44,4 @@ cd ~/ceres_ws/
 catkin_make
 
 echo ""
-echo "Completed"
-echo "
-. u want
-.
-.. .... __,--------__
-<::::..____ :.......(ö).':
-.............:............ :
-. ............\..............\
-----------------------
-.
-. sum fuk?
-.....---;;;;;;---:
-.. (Ö)...|_-_|...(Ö)
-. .|...............|
-. |.................|
-. |.................|
-"
+echo "Completed!"
