@@ -4,8 +4,9 @@
 
 echo ""
 echo "Complete ros setup"
-cd /
+cd $HOME
 echo 'source /opt/ros/kinetic/setup.bash' >> .bashrc
+source ~/.bashrc
 
 echo ""
 echo "Install wstool and use it to start .rosinstall process"
