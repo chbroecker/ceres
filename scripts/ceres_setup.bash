@@ -28,8 +28,8 @@ echo "Copying the libroyale SDK to the pico_flexx_driver:"
 cd ~/ceres_ws/src/pico_flexx_driver/royale
 cp ~/Downloads/libroyale.zip .
 unzip libroyale.zip
-unzip 20170127_royale_3.1.0.122.zip
-unzip libroyale-3.1.0.122-LINUX-x86-64Bit.zip
+unzip 20170127_royale_*.zip
+unzip libroyale-*-LINUX-x86-64Bit.zip
 rm *.zip
 rm *.exe
 
