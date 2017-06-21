@@ -15,6 +15,10 @@ mkdir -p ~/ceres_ws
 cd ~/ceres_ws
 
 echo ""
+echo "Installing tmux"
+sudo apt-get install tmux 
+
+echo ""
 echo "Pulling .rosinstall script"
 # Pull rosinstall file and executes it
 wstool init src https://raw.githubusercontent.com/chbroecker/ceres/master/scripts/ceres-kinetic.rosinstall?token=AVQgivWyEzSsUrQHE6qCUBCDTZ6ieSP4ks5ZQ8zywA%3D%3D
@@ -28,8 +32,8 @@ echo "Copying the libroyale SDK to the pico_flexx_driver:"
 cd ~/ceres_ws/src/pico_flexx_driver/royale
 cp ~/Downloads/libroyale.zip .
 unzip libroyale.zip
-unzip 20170127_royale_*.zip
-unzip libroyale-*-LINUX-x86-64Bit.zip
+unzip 20170127_royale_3.4.0.18.zip
+unzip libroyale-3.4.0.18-LINUX-x86-64Bit.zip
 rm *.zip
 rm *.exe
 
