@@ -8,7 +8,7 @@
     version: kinetic
 - git:
     local-name: pico_flexx_driver
-    uri: https://github.com/juliangaal/pico_flexx_driver.git
+    uri: https://github.com/code-iai/pico_flexx_driver.git
 - git:
     local-name: uos_tools
     uri: https://github.com/uos/uos_tools.git
@@ -18,5 +18,6 @@
     uri: https://github.com/ros-drivers/phidgets_drivers.git
     version: kinetic
 - git:
-    local-name: ceres_bringup
-    uri: https://github.com/chbroecker/ceres_bringup.git
+    local-name: ceres_robot
+    uri: https://github.com/juliangaal/ceres_robot.git
+    version: kinetic
